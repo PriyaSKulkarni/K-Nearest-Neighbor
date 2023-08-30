@@ -1,16 +1,15 @@
 # K-Nearest-Neighbor
-CSE-6363-001-MACHINE LEARNING: K Nearest Neighbor
+CSE-6363-001-MACHINE LEARNING under Manfred Huber: K Nearest Neighbor
 
-We are tasked with predicting the material type of a mug based on height, diameter, weight, and hue (color) measurements. We approach this using the K-Nearest Neighbors (KNN) algorithm with two different similarity measures. Here's the breakdown:
+**Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Derivation:**
+1. We explore learning the parameter q in the geometric distribution representing boot failures. For MLE, we derive the optimization result using observed failure counts. For MAP, we use the Beta distribution as a conjugate prior for q. We show steps and results for both methods using the given dataset.
 
-a) Using Cartesian distance as the similarity measure, we predict material types for the Evaluation data. We calculate distances, select neighbors, and predict material types for K values of 1, 3, and 5, leveraging corresponding training data.
+**K Nearest Neighbor (KNN) Material Prediction:**
+2. Now we address mug material prediction using KNN and various distance measures. Specifically:
+a) Utilizing Cartesian distance, we predict material types for Evaluation data using generated training data for K values of 1, 3, and 5. We detail each step: distance calculation, neighbor selection, and final prediction.
+b) We develop a flexible KNN algorithm that adapts to different training datasets and allows input for predictions.
+c) Implementing leave-one-out evaluation, we assess the KNN algorithm's accuracy. We repeatedly train on reduced data and test on the excluded point to estimate erroneous predictions. We apply this to the Question 2c dataset for K values 1, 3, and 5, determining the best-performing K.
+d) We enhance the KNN algorithm to use Manhattan distance (L1) and re-run the leave-one-out evaluation. We analyze which similarity measure performs better for different K values.
+e) In another experiment, we repeat the prediction evaluation from part c) using KNN with Cartesian distance, while excluding the fourth attribute. We compare results to assess which data configuration yields superior predictions.
 
-b) Our KNN algorithm is implemented to handle various training data and take input data points for predictions.
-
-c) For evaluating KNN's performance, we employ leave-one-out validation. We repeatedly train on the remaining data, predict the label for the excluded point, and calculate the percentage of erroneous predictions. We apply this with K values of 1, 3, and 5 on the Question 2c dataset, determining the best K for optimal accuracy.
-
-d) We modify the KNN algorithm to use Manhattan distance (L1) as the similarity measure and repeat the leave-one-out validation. We compare the accuracy of both similarity measures for each K value.
-
-e) We rerun the prediction experiment from part c), this time excluding the fourth attribute (hue). We use KNN with Cartesian distance and assess the prediction performance. We compare this with the previous scenario to determine whether including hue improves predictions.
-
-In summary, we predict mug material types using KNN with different similarity measures and evaluate its accuracy through leave-one-out validation. We analyze the impact of different attributes and similarity measures on the prediction results.
+In summary, we address MLE and MAP derivation for boot failures, and we extensively explore KNN for mug material prediction, considering different distance metrics and scenarios.
