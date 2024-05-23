@@ -1,4 +1,4 @@
-# K-Nearest-Neighbor
+# K-Nearest-Neighbor   
 CSE-6363-001-MACHINE LEARNING under Manfred Huber: K Nearest Neighbor   
     
 **Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Derivation:**
