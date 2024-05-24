@@ -4,7 +4,7 @@ CSE-6363-001-MACHINE LEARNING under Manfred Huber: K Nearest Neighbor
 **Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Derivation:**
 1. We explore learning the parameter q in the geometric distribution representing boot failures. For MLE, we derive the optimization result using observed failure counts. For MAP, we use the Beta distribution as a conjugate prior for q. We show steps and results for both methods using the given dataset.
 
-**K Nearest Neighbor (KNN) Material Prediction:**
+**K Nearest Neighbor (KNN) Material Prediction:**   
 2. Now we address mug material prediction using KNN and various distance measures. Specifically:
 a) Utilizing Cartesian distance, we predict material types for Evaluation data using generated training data for K values of 1, 3, and 5. We detail each step: distance calculation, neighbor selection, and final prediction.
 b) We develop a flexible KNN algorithm that adapts to different training datasets and allows input for predictions.
