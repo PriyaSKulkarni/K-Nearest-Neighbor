@@ -1,6 +1,5 @@
 # K-Nearest-Neighbor   
 CSE-6363-001-MACHINE LEARNING under Manfred Huber: K Nearest Neighbor    
-
     
 **Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Derivation:**  
 1. We explore learning the parameter q in the geometric distribution representing boot failures. For MLE, we derive the optimization result using observed failure counts. For MAP, we use the Beta distribution as a conjugate prior for q. We show steps and results for both methods using the given dataset.
